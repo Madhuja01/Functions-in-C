@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int max_of_four(int a, int b, int c, int d) {
+    int t1, t2;
+    return (((t1 = a>b?a:b)>(t2 = c>d?c:d))?t1:t2);
+}
+
+int main() {
+    int a, b, c, d, res;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    res = max_of_four(a,b,c,d);
+    return 0;
+}
